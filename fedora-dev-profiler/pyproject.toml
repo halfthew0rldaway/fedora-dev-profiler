@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fedora-dev-profiler"
+version = "0.1.0"
+description = "A read-only Fedora-native tool to profile development environments."
+readme = "README.md"
+authors = [{name = "halfthew0rldaway", email = "wisnuwidyapradana2004@gmail.com"}]
+license = {text = "MIT"}
+dependencies = [
+    "PyGObject",
+]
+requires-python = ">=3.11"
+
+[project.scripts]
+fedora-dev-profiler = "fedora_dev_profiler.__main__:main"
